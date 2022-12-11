@@ -14,3 +14,13 @@
 * C#
 * Java
 
+### Инструменты разработки:
+* Android Studio
+* Unity
+* Godot
+* Visual Studio Code
+* Eclipse
+  
+## Примеры кода
+~~print("Hello world")~~
+
