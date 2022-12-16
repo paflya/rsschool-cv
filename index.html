@@ -101,36 +101,19 @@
         <hr class="hr-line">
         <a class="cv-bio" id="code"><h2>My code</h2></a>
         <p class="cv-bio about-text">
-            I don't know what kind of code i should provide to show my skills, 
-            so here is a small snippet for user authorization, written in Java used in my andriod app
+            Here is a small snippet done on codewars, written in Python<br>
+            A function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed. Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
         </p>
         <pre class="cv-bio about-text" >        
-        public ArrayList ExtractPrepods(Document Xml) {
-            ArrayList PrepList=new ArrayList();
-            try {
-                Node root = Xml.getDocumentElement();
-                NodeList AllINodes = root.getChildNodes();
-                int PrepodsIndex=0;
-                for (int i = 0; i &lt; AllINodes.getLength(); i++) {
-                    if (AllINodes.item(i).getNodeName().equals("prepods")) {
-                        PrepodsIndex = i;
-                        break;
-                    }
-                }
-                NodeList prepods = AllINodes.item(PrepodsIndex).getChildNodes();
-                for (int i = 0; i &lt; prepods.getLength(); i++) {
-                    Node Prep = prepods.item(i);
-                    if (Prep.getNodeType() == Node.ELEMENT_NODE)
-                        PrepList.add(Prep.getChildNodes().item(1).getTextContent());
-                }
-                return PrepList;
-            }
-            catch (Exception ex)
-            {
-                Log.d("Err",ex.toString());
-                return PrepList;
-            }
-        }
+            def spin_words(sentence):
+            words=sentence.split(" ")
+            new_sentence=[]
+            for word in words:
+                if len(word)>=5: 
+                    new_sentence.append(word[::-1])
+                else:
+                    new_sentence.append(word)
+            return ' '.join(new_sentence)
         </pre>
         <hr class="hr-line">
         <a class="cv-bio" id="expirience"><h2>My experience</h2></a>
