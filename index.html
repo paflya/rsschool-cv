@@ -7,38 +7,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Pavel Katsevichus</h1>
-    <h2>Контакты</h2>
-    <ol>
-        <li>Telegram: @paflya</li>
-        <li>Discord: @paflya</li>
-        <li>GitHub: @paflya</li>
-    </ol>
-    <h2>О себе</h2>
-    Имею тяготу к геймдеву, изучаю JavaScript для интереса
-    <h2>Навыки</h2>
-    <h3>Языки:</h3>
-    <ol>
-        <li>Python</li>
-        <li>C#</li>
-        <li>Java</li>
-    </ol>
-    <h3>Инструменты разработки:</h3>
-    <ol>
-        <li>Android Studio</li>
-        <li>Unity</li>
-        <li>Godot</li>
-        <li>Visual Studio Code</li>
-        <li>Eclipse</li>
-    </ol>
-    <h2>Примеры кода</h2>
-    <b>print("Hello world")</b>
-    <h2>Опыт работы</h2>
-    Tower Battlegrounds (Android,Unity) Игра для андроида
-    <a href="https://play.google.com/store/apps/details?id=com.Paflya.TowerBattlegrounds&pli=1">Ссылка</a>
-    <h2>Образование</h2>
-    Окончил МТЭК в 2020 по специальности техник-программист. Получаю высшее образование в БГУИР, по специальности инженер-системотехник.
-    <h1>Английский язык C2</h1>
+<body class="cv-body">
+    <header class="cv-header">
+        <nav>
+            <ul class="ul-no-marker">
+                <li class="li-inline">
+                    <a href="#about">About me</a>
+                </li>
+                <li class="li-inline">
+                    <a href="#skills">My skills</a>
+                </li>
+                <li class="li-inline">
+                    <a href="#code">My code</a>
+                </li>
+                <li class="li-inline">
+                    <a href="#expirience">My experience</a>
+                </li>
+                <li class="li-inline">
+                    <a href="#education">My education</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cv-bio">
+            <div class="cv-name">
+                <h1>Pavel Katsevichus</h1>
+                <p>Determined and dilligent programmer</p>
+            </div>
+            <div class="cv-avatar-contacts-wrapper">
+                <img class="cv-avatar" src="images/avatar.jpg" alt="avatar">
+                <ul class="ul-contacts-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/pavel-katsevichus-31485a248/"><img class="cv-contacts-logo" src="images/linkedin.svg" alt="lunkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/paflya"><img class="cv-contacts-logo" src="images/github.svg" alt="github"></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/paflya"><img class="cv-contacts-logo" src="images/telegram.svg" alt="telegram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a class="cv-bio" id="about"><h2>About me</h2></a>
+        <div class="cv-bio about-text">
+            <p>
+            Born in 2001. 4 years of expirience with a break from 2020 to 2022. Started my journey as programmer, because of love for videogames, and how are they created.
+            </p>
+            <p>
+            I did a couple of projects of my own in game and app development for desktop and mobile.
+            </p>
+            <p>
+            Programming for me is solving puzzles, but fun!
+            </p>
+
+        </div>
+        <hr class="hr-line">
+        <a class="cv-bio" id="skills"><h2>My skills</h2></a>
+        <p class="cv-bio about-text">I am interested in learning new skills. Here is a list of tools and languages i've worked with</p>
+        <div class="cv-bio">
+            <div class="skills-text">
+                <p>Languages im working with</p>
+                <ul>
+                    <li>GDScript</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                </ul>
+                <p>Tools i use currently</p>
+                <ul>
+                    <li>Godot Game Engine</li>
+                    <li>GitHub</li>
+                    <li>Blender</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+            <div class="skills-text">
+                <p>Languages i used</p>
+                <ul>
+                    <li>Java</li>
+                    <li>SQl</li>
+                    <li>C++</li>
+                </ul>
+                <p>Tools i used previosly</p>
+                <ul>
+                    <li>Unity</li>
+                    <li>Android Studio</li>
+                    <li>Firebase</li>
+                    <li>Visual Studio</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <a class="cv-bio" id="code"><h2>My code</h2></a>
+        <p class="cv-bio about-text">
+            Here is a small snippet done on codewars, written in Python<br>
+            A function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed. Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+        </p>
+        <pre class="cv-bio about-text" >        
+            def spin_words(sentence):
+            words=sentence.split(" ")
+            new_sentence=[]
+            for word in words:
+                if len(word)>=5: 
+                    new_sentence.append(word[::-1])
+                else:
+                    new_sentence.append(word)
+            return ' '.join(new_sentence)
+        </pre>
+        <hr class="hr-line">
+        <a class="cv-bio" id="expirience"><h2>My experience</h2></a>
+        <p class="cv-bio about-text"> Here are the list of my notable experience as a developer</p>
+        <div class="cv-bio about-text">
+        <div class="cv-experince">
+        App name: Tower Battlegroungs<br>
+        Year of release: 2019<br>
+        Platforms: Android<br>
+        Type: Game<br>
+        <a href="https://play.google.com/store/apps/details?id=com.Paflya.TowerBattlegrounds">Link</a>
+        <br>
+        <hr class="hr-line">
+        App name: MTEC College timetable app<br>
+        Year of release: 2020<br>
+        Platforms: Android<br>
+        Type: App<br>
+        Description: Virtual timetable app for teachers and student, with different set of functionality for both
+        </div>
+        <hr class="hr-line">
+        <a class="cv-bio" id="education"><h2>My education</h2></a>
+        <div class="cv-bio skills-text">
+                <p><b>2016-2020</b> Molodechno College of Commerce and Economics</p>
+                <p><b>2020-2024</b> Belarusian State University of Informatics and Radioelectronics</p>
+                <h3>Current english level: C2</h3>
+
+        </div>
+        </div>
+    </main>
+    <footer class="cv-footer">
+        <a href="https://rs.school/js/">
+            <img class="cv-rs-logo" src="https://rs.school/images/rs_school_js.svg" alt="rs school logo">
+        </a>
+        <div class="cv-bio">
+        <a href="https://github.com/paflya">GitHub</a>
+        <p>2022</p>
+        </div>
+    </footer>
 </body>
 </html>
